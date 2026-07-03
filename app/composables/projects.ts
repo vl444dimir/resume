@@ -84,24 +84,6 @@ export const projects: Project[] = [
     starred: true
   },
   {
-    id: 4,
-    title: 'EcoBaqylau AI',
-    subtitle: 'Environmental Monitoring Platform',
-    repo: 'TimQRB/ecoproject',
-    description: 'AI-powered environmental violation reporting platform. Citizens report violations via mobile app, system analyzes photos with YOLOv8, admin panel for inspectors.',
-    stack: ['Next.js 14', 'React 18', 'TypeScript', 'Tailwind CSS', 'Flutter 3 + Dart', 'FastAPI', 'PostgreSQL 15 + PostGIS', 'YOLOv8', 'Docker'],
-    features: [
-      'Citizen mobile app (Flutter) for violation reports with photo + geolocation',
-      'YOLOv8-based photo analysis for violation category detection',
-      'Admin web panel (Next.js) with dashboard, map clustering, report management',
-      'Full report lifecycle: new → review → confirm → progress → resolved',
-      'Dashboard analytics with Recharts, map clustering visualization',
-      'JWT role-based auth (citizen/inspector/admin)',
-      'Docker Compose with Nginx reverse proxy, demo data seeding'
-    ],
-    role: 'Full-stack developer (web + mobile + backend)'
-  },
-  {
     id: 5,
     title: 'CyberShield',
     subtitle: 'Agri-Antifraud Hackathon',

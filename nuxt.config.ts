@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'static',
     prerender: {
-      routes: ['/', '/projects', '/projects/1', '/projects/2', '/projects/3', '/projects/4', '/projects/5', '/projects/6', '/projects/7']
+      routes: ['/', '/projects', '/projects/1', '/projects/2', '/projects/3', '/projects/5', '/projects/6', '/projects/7']
     }
   },
   app: {

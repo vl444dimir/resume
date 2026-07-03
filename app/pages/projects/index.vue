@@ -6,7 +6,7 @@
           PROJECTS
         </div>
         <p style="margin-top: 0.75rem; max-width: 600px;">
-          7 projects &mdash; from agro monitoring to ML courses, GPS tracking to AI antifraud.
+          6 projects &mdash; from agro monitoring to ML courses, GPS tracking to antifraud.
         </p>
       </div>
 
