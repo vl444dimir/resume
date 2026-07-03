@@ -13,6 +13,16 @@ export interface Project {
   starred?: boolean
 }
 
+export function getSortedProjects(): Project[] {
+  return [...projects].sort((a, b) => {
+    if (a.id === 5) return -1
+    if (b.id === 5) return 1
+    if (a.starred && !b.starred) return -1
+    if (!a.starred && b.starred) return 1
+    return a.id - b.id
+  })
+}
+
 export const projects: Project[] = [
   {
     id: 1,

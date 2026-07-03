@@ -130,7 +130,7 @@
 </template>
 
 <script setup lang="ts">
-import { projects } from '~/composables/projects'
+import { getSortedProjects } from '~/composables/projects'
 
-const featuredProjects = projects.filter(p => p.starred).slice(0, 2)
+const featuredProjects = computed(() => getSortedProjects().filter(p => p.starred).slice(0, 2))
 </script>

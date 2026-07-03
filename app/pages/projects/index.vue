@@ -32,13 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { projects } from '~/composables/projects'
+import { getSortedProjects } from '~/composables/projects'
 
-const sortedProjects = computed(() =>
-  [...projects].sort((a, b) => {
-    if (a.starred && !b.starred) return -1
-    if (!a.starred && b.starred) return 1
-    return a.id - b.id
-  })
-)
+const sortedProjects = computed(() => getSortedProjects())
 </script>
