@@ -107,7 +107,10 @@
         <div class="project-grid stagger">
           <div v-for="(project, i) in featuredProjects" :key="project.id" class="project-card">
             <div class="sticky-label">{{ project.role }}</div>
-            <h3 style="margin-top: 0.5rem;">{{ project.title }}</h3>
+            <h3 style="margin-top: 0.5rem;">
+              <span v-if="project.starred" class="star-icon">★</span>
+              {{ project.title }}
+            </h3>
             <div class="project-meta">{{ project.subtitle }}</div>
             <p style="font-size: 0.9rem; margin-bottom: 0.75rem;">{{ project.description }}</p>
             <div class="stack-tags">
@@ -129,5 +132,5 @@
 <script setup lang="ts">
 import { projects } from '~/composables/projects'
 
-const featuredProjects = projects.slice(0, 3)
+const featuredProjects = projects.filter(p => p.starred).slice(0, 2)
 </script>

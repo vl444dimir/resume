@@ -87,6 +87,8 @@ h1 { font-size: 2.5rem; } h2 { font-size: 1.75rem; margin-bottom: 1rem; } h3 { f
 .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 @media (max-width: 768px) { .project-grid { grid-template-columns: 1fr; } .nav-links { gap: 1rem; } .nav-logo { font-size: 1.2rem; } }
 
+.star-icon { color: #FFD700; font-size: 1.1em; margin-right: 0.15em; display: inline-block; }
+
 .project-card {
   border: 3px solid var(--text); padding: 1.5rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease; position: relative; overflow: hidden;

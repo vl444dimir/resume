@@ -10,6 +10,7 @@ export interface Project {
   image?: string
   imageLabel?: string
   pdf?: string
+  starred?: boolean
 }
 
 export const projects: Project[] = [
@@ -49,7 +50,8 @@ export const projects: Project[] = [
       'Attendance logging, FCM push notifications, health records',
       'Parent mobile app (Expo) + school admin panel'
     ],
-    role: 'Full-stack developer (frontend + gateway + backend)'
+    role: 'Full-stack developer (frontend + gateway + backend)',
+    starred: true
   },
   {
     id: 3,
@@ -68,7 +70,8 @@ export const projects: Project[] = [
       'Device simulator for testing telemetry scenarios',
       'Alembic database migrations'
     ],
-    role: 'Full-stack developer (frontend + backend)'
+    role: 'Full-stack developer (frontend + backend)',
+    starred: true
   },
   {
     id: 4,
@@ -106,7 +109,8 @@ export const projects: Project[] = [
     role: 'Solo developer (data + frontend + analysis)',
     image: '/images/cybersheid.jpg',
     imageLabel: 'HACKATHON VICTORY',
-    pdf: '/images/agro67-pitch.pdf'
+    pdf: '/images/agro67-pitch.pdf',
+    starred: true
   },
   {
     id: 6,
@@ -124,7 +128,8 @@ export const projects: Project[] = [
       'Codeception testing, Psalm static analysis'
     ],
     role: 'Frontend + backend developer',
-    image: '/images/partners.png'
+    image: '/images/partners.png',
+    starred: true
   },
   {
     id: 7,
@@ -144,6 +149,7 @@ export const projects: Project[] = [
       'Session-based authentication'
     ],
     role: 'Frontend developer + backend bug fixes',
-    image: '/images/kucourse.png'
+    image: '/images/kucourse.png',
+    starred: true
   }
 ]
