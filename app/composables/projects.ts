@@ -29,8 +29,7 @@ export const projects: Project[] = [
       'Dual API: real Spring Boot backend + mock json-server',
       'Docker Compose with Nginx production config'
     ],
-    role: 'Solo full-stack developer',
-    pdf: '/images/agro67-pitch.pdf'
+    role: 'Solo full-stack developer'
   },
   {
     id: 2,
@@ -104,7 +103,8 @@ export const projects: Project[] = [
       'Offline-capable inspection checklist with photo capture'
     ],
     role: 'Solo developer (data + frontend + analysis)',
-    image: '/images/cybersheid.jpg'
+    image: '/images/cybersheid.jpg',
+    pdf: '/images/agro67-pitch.pdf'
   },
   {
     id: 6,
