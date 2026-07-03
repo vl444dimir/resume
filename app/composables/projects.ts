@@ -8,6 +8,7 @@ export interface Project {
   features: string[]
   role: string
   image?: string
+  imageLabel?: string
   pdf?: string
 }
 
@@ -104,6 +105,7 @@ export const projects: Project[] = [
     ],
     role: 'Solo developer (data + frontend + analysis)',
     image: '/images/cybersheid.jpg',
+    imageLabel: 'HACKATHON VICTORY',
     pdf: '/images/agro67-pitch.pdf'
   },
   {

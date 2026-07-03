@@ -25,7 +25,7 @@
         </div>
 
         <div v-if="project.image" class="manga-panel" style="max-width: 900px; margin-top: 1.5rem;">
-          <h2>SCREENSHOT</h2>
+          <h2>{{ project.imageLabel || 'SCREENSHOT' }}</h2>
           <div style="margin-top: 0.75rem;">
             <img
               :src="project.image"
