@@ -1,23 +1,31 @@
 <template>
   <div>
     <section class="hero-section">
-      <div class="container">
-        <div class="manga-panel angled" style="max-width: 800px; border-width: 4px;">
-          <div class="impact-text">
-            <span>HI, I'M</span><br>
-            <span class="burst">VLADIMIR</span>
+      <div class="container hero-layout">
+        <div class="hero-text">
+          <div class="manga-panel angled" style="border-width: 4px;">
+            <div class="impact-text">
+              <span>HI, I'M</span><br>
+              <span class="burst">VLADIMIR</span>
+            </div>
+            <div class="divider" style="margin: 1.5rem 0;"></div>
+            <p style="font-size: 1.2rem; font-family: var(--font-display); letter-spacing: 0.05em;">
+              FULL-STACK DEVELOPER
+            </p>
+            <p style="margin-top: 0.75rem; max-width: 600px; font-size: 0.95rem;">
+              React &bull; FastAPI &bull; Java Spring Boot &bull; PHP Yii3 &bull; PostgreSQL<br>
+              Building web platforms, IoT systems, mobile apps, and AI solutions
+            </p>
+            <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+              <NuxtLink to="/projects" class="btn btn-primary">VIEW PROJECTS</NuxtLink>
+              <a href="https://github.com/vl444dimir" target="_blank" rel="noopener" class="btn btn-ghost">GITHUB</a>
+            </div>
           </div>
-          <div class="divider" style="margin: 1.5rem 0;"></div>
-          <p style="font-size: 1.2rem; font-family: var(--font-display); letter-spacing: 0.05em;">
-            FULL-STACK DEVELOPER
-          </p>
-          <p style="margin-top: 0.75rem; max-width: 600px; font-size: 0.95rem;">
-            React &bull; FastAPI &bull; Java Spring Boot &bull; PHP Yii3 &bull; PostgreSQL<br>
-            Building web platforms, IoT systems, mobile apps, and AI solutions
-          </p>
-          <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-            <NuxtLink to="/projects" class="btn btn-primary">VIEW PROJECTS</NuxtLink>
-            <a href="https://github.com/vl444dimir" target="_blank" rel="noopener" class="btn btn-ghost">GITHUB</a>
+        </div>
+        <div class="hero-photo">
+          <div class="manga-panel angled-alt photo-frame">
+            <span class="sticky-label">VLADIMIR</span>
+            <img src="/images/photo_2026-07-07_11-57-02.jpg" alt="Vladimir" class="hero-img">
           </div>
         </div>
       </div>
