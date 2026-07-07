@@ -1,6 +1,8 @@
 <template>
   <div class="page-section">
     <div class="container">
+      <NuxtLink to="/" class="btn btn-ghost" style="margin-bottom: 1.5rem; display: inline-block;">← HOME</NuxtLink>
+
       <div class="manga-panel" style="max-width: 800px; margin-bottom: 3rem;">
         <div class="impact-text" style="font-size: clamp(2rem, 4vw, 3rem);">
           PROJECTS
