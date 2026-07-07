@@ -53,6 +53,33 @@ body {
   }
 }
 
+/* ─── Print Button ─── */
+
+.btn-print {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font);
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  background: var(--text);
+  color: var(--bg);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  opacity: 0.85;
+}
+
+.btn-print:hover {
+  opacity: 1;
+}
+
 /* ─── Header ─── */
 
 .resume-header {
@@ -357,5 +384,163 @@ body {
   .lang-list li {
     flex-direction: column;
     gap: 0.1rem;
+  }
+}
+
+/* ─── Print / A4 Export ─── */
+
+@media print {
+  @page {
+    size: A4;
+    margin: 1.5cm;
+  }
+
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+    min-height: auto;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  .resume {
+    max-width: 100%;
+    opacity: 1 !important;
+    animation: none !important;
+  }
+
+  .btn-print {
+    display: none !important;
+  }
+
+  .resume-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .resume-name {
+    font-size: 24pt;
+  }
+
+  .resume-title {
+    font-size: 11pt;
+    color: #555 !important;
+  }
+
+  .resume-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .section-title {
+    font-size: 7pt;
+    color: #999 !important;
+    margin-bottom: 0.75rem;
+  }
+
+  .divider {
+    height: 1px;
+    background: #ccc !important;
+    margin-bottom: 1rem;
+  }
+
+  .entry {
+    margin-bottom: 1rem;
+  }
+
+  .entry-date {
+    color: #666 !important;
+    font-size: 8pt;
+  }
+
+  .entry-title {
+    font-size: 11pt;
+  }
+
+  .entry-sub,
+  .entry-desc {
+    font-size: 9pt;
+    color: #333 !important;
+  }
+
+  .entry-desc {
+    max-width: none;
+  }
+
+  .photo-wrapper {
+    width: 110px;
+    height: 110px;
+  }
+
+  .resume-photo {
+    filter: none;
+  }
+
+  .contact-list li {
+    font-size: 9pt;
+    border-bottom-color: #ddd !important;
+  }
+
+  .contact-label {
+    color: #888 !important;
+  }
+
+  .contact-list a {
+    color: #000 !important;
+  }
+
+  .about-text {
+    font-size: 9pt;
+  }
+
+  .lang-list li {
+    font-size: 9pt;
+    border-bottom-color: #ddd !important;
+  }
+
+  .lang-level {
+    color: #888 !important;
+  }
+
+  .skill-tag {
+    font-size: 8pt;
+    padding: 0.15rem 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .hobby-list li {
+    font-size: 9pt;
+  }
+
+  .hobby-list li:not(:last-child)::after {
+    color: #ccc !important;
+  }
+
+  .resume-footer {
+    margin-top: 1.5rem;
+    padding-top: 0.75rem;
+    font-size: 8pt;
+    color: #aaa !important;
+  }
+
+  .achievements li {
+    font-size: 9pt;
+  }
+
+  .achievements li::before {
+    color: #888 !important;
+  }
+
+  a {
+    text-decoration: none !important;
   }
 }
