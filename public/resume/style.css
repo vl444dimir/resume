@@ -392,7 +392,7 @@ body {
 @media print {
   @page {
     size: A4;
-    margin: 1.5cm;
+    margin: 1.2cm;
   }
 
   * {
@@ -406,14 +406,15 @@ body {
     padding: 0;
     margin: 0;
     min-height: auto;
-    font-size: 11pt;
-    line-height: 1.5;
+    font-size: 9.5pt;
+    line-height: 1.4;
   }
 
   .resume {
     max-width: 100%;
     opacity: 1 !important;
     animation: none !important;
+    page-break-after: avoid;
   }
 
   .btn-print {
@@ -421,63 +422,78 @@ body {
   }
 
   .resume-header {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .resume-name {
-    font-size: 24pt;
+    font-size: 20pt;
+    margin-bottom: 0.1rem;
   }
 
   .resume-title {
-    font-size: 11pt;
+    font-size: 9.5pt;
     color: #555 !important;
   }
 
   .resume-grid {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
     align-items: start;
+    page-break-before: avoid;
+    page-break-inside: avoid;
+  }
+
+  .section {
+    margin-bottom: 0.75rem;
+    page-break-inside: avoid;
   }
 
   .section-title {
-    font-size: 7pt;
+    font-size: 6.5pt;
     color: #999 !important;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
   }
 
   .divider {
     height: 1px;
     background: #ccc !important;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
 
   .entry {
-    margin-bottom: 1rem;
+    margin-bottom: 0.65rem;
+    page-break-inside: avoid;
   }
 
   .entry-date {
     color: #666 !important;
-    font-size: 8pt;
+    font-size: 7.5pt;
+    margin-bottom: 0.15rem;
   }
 
   .entry-title {
-    font-size: 11pt;
+    font-size: 9.5pt;
+    margin-bottom: 0.05rem;
   }
 
-  .entry-sub,
+  .entry-sub {
+    font-size: 8pt;
+    color: #555 !important;
+    margin-bottom: 0.2rem;
+  }
+
   .entry-desc {
-    font-size: 9pt;
+    font-size: 8pt;
     color: #333 !important;
-  }
-
-  .entry-desc {
     max-width: none;
+    line-height: 1.35;
   }
 
   .photo-wrapper {
-    width: 110px;
-    height: 110px;
+    width: 95px;
+    height: 95px;
+    margin-bottom: 0.25rem;
   }
 
   .resume-photo {
@@ -485,12 +501,14 @@ body {
   }
 
   .contact-list li {
-    font-size: 9pt;
+    font-size: 8pt;
+    padding: 0.2rem 0;
     border-bottom-color: #ddd !important;
   }
 
   .contact-label {
     color: #888 !important;
+    font-size: 7.5pt;
   }
 
   .contact-list a {
@@ -498,27 +516,35 @@ body {
   }
 
   .about-text {
-    font-size: 9pt;
+    font-size: 8pt;
+    line-height: 1.4;
   }
 
   .lang-list li {
-    font-size: 9pt;
+    font-size: 8pt;
+    padding: 0.15rem 0;
     border-bottom-color: #ddd !important;
   }
 
   .lang-level {
     color: #888 !important;
+    font-size: 7.5pt;
   }
 
   .skill-tag {
-    font-size: 8pt;
-    padding: 0.15rem 0.5rem;
+    font-size: 7pt;
+    padding: 0.1rem 0.4rem;
     border: 1px solid #ccc;
     border-radius: 3px;
+    line-height: 1.4;
+  }
+
+  .skills-tags {
+    gap: 0.25rem;
   }
 
   .hobby-list li {
-    font-size: 9pt;
+    font-size: 8pt;
   }
 
   .hobby-list li:not(:last-child)::after {
@@ -526,14 +552,20 @@ body {
   }
 
   .resume-footer {
-    margin-top: 1.5rem;
-    padding-top: 0.75rem;
-    font-size: 8pt;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    font-size: 7pt;
     color: #aaa !important;
   }
 
+  .achievements {
+    page-break-inside: avoid;
+  }
+
   .achievements li {
-    font-size: 9pt;
+    font-size: 8pt;
+    margin-bottom: 0.25rem;
+    line-height: 1.35;
   }
 
   .achievements li::before {
