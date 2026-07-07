@@ -18,6 +18,7 @@
             </p>
             <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
               <NuxtLink to="/projects" class="btn btn-primary">VIEW PROJECTS</NuxtLink>
+              <a href="/resume/" class="btn btn-ghost" style="border-style: dashed;">RESUME</a>
               <a href="https://github.com/vl444dimir" target="_blank" rel="noopener" class="btn btn-ghost">GITHUB</a>
             </div>
           </div>
