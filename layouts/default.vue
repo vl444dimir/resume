@@ -30,6 +30,10 @@
       <slot />
     </main>
 
+    <NuxtLink v-if="route.path !== '/'" to="/" class="back-home-btn" aria-label="Back to home" title="Back to home">
+      ← HOME
+    </NuxtLink>
+
     <footer>
       <div class="container">
         <div class="divider"></div>
@@ -38,3 +42,7 @@
     </footer>
   </div>
 </template>
+
+<script setup lang="ts">
+const route = useRoute()
+</script>
